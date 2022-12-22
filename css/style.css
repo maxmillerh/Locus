@@ -1,0 +1,508 @@
+
+:root {
+  --green: #58A9A5;
+	--yellow: #FEC62D;
+}
+
+body{
+	font-family: 'Poppins', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 45px;
+	box-sizing: border-box;
+}
+
+.container{
+	margin-left: 100px;
+	margin-right: 100px;
+}
+
+.header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 55px;
+}
+
+
+
+.logo{
+	display: flex;
+	align-items: center;
+}
+
+.logo-text{
+	font-weight: 800;
+	font-size: 38px;
+	line-height: 52px;
+	color: var(--green);
+	margin-left: 8px;
+}
+
+.menu {
+	display: inline-block;
+	text-decoration: none;
+	font-weight: 400;
+	font-size: 20px;
+}
+ .menu-li {
+	float: left;
+	list-style: none;
+	margin-left: 35px;
+	font-weight: 400;
+	color: #404242;
+}
+
+.menu-li:first-child {
+	margin-left: 0px;
+}
+
+
+.menu-li:hover{
+	transition: all 0.5s ease;
+	cursor: pointer;
+	color: var(--yellow);
+}
+
+.active{
+	position: relative;
+	color: var(--green);
+	font-weight: 700;
+}
+
+.active::after{
+	content: ' ';
+	position: absolute;
+	width: 60%;
+	margin-left: 20%;
+	height: 4px;
+	background-color: var(--yellow);
+	top: 40px;
+	left: 0;
+}
+
+.btn {
+	width: 190px;
+	height: 60px;
+	border-radius: 15px;
+	background-color: var(--green);	
+	color: #fff;
+	font-size: 20px;
+	font-weight: 500;
+	border: none;
+	cursor: pointer;
+}
+
+.btn:hover{
+	background-color: #3c8884;
+	transition: all 0.5s ease;
+}
+
+.main{
+	display: flex;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.main-text-block{
+	width: 45%;
+	float: left;
+
+}
+
+.title-text{
+	display: block;
+	font-style: normal;
+	font-weight: 800;
+	font-size: 54px;
+	line-height: 80px;
+	color: #1C2323;
+}
+
+.p-text-1{
+	font-weight: 400;
+	font-size: 22px;
+	line-height: 33px;
+	color: #404242;
+}
+
+.main-foto-block{
+	width: 55%;
+	float: right;
+	padding-top: 20px;
+}
+
+.main-foto{
+	width: 90%;
+	margin-left: 10%;
+
+}
+
+.main .btn, .forma .btn{
+	border-radius: 15px 15px 15px 0;
+	margin-top: 24px;
+}
+
+.Howitworks .title-text{
+	text-align: center;
+	margin-top: 66px;
+	margin-bottom: 10px;
+}
+
+.Howitworks .p-text-1{
+	text-align: center;
+}
+
+.Howitworks-content, .Projectdone-content  {
+	display: flex;
+	height: auto;
+	margin-top: 60px;
+	margin-bottom: 50px;
+}
+
+.Howitworks-foto-block {
+	position: relative;
+	width: 64%;
+	float: left;
+	height: 278px;
+	background-image: url(../img/2img.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+.Howitworks-text-block {
+	box-sizing: border-box;
+	width: 36%;
+	float: right;
+	height: 278px;
+	background-color: #CCF0E6;
+	padding:  40px 80px;
+	font-size: 18px;
+	color: #486958;
+	font-weight: 500;
+	line-height: 28px;
+}
+
+.Howitworks span{
+	position: relative;
+	bottom: -20px;
+	font-weight: 600;
+	letter-spacing: 1px;
+	
+}
+
+.circle{
+	position: absolute;
+	background-color: rgb(255, 255, 255, 0.4);
+	bottom: 30px;
+	right: -45px;
+	width: 90px;
+	height: 90px;
+	border-radius: 45px;
+	z-index: 2;
+	
+}
+
+.circle-2 {
+	background-color: rgb(255, 255, 255);
+	width: 66px;
+	height: 66px;
+	margin-top: 12px;
+	margin-left: 12px;
+	opacity: 100%;
+	border-radius: 40px;
+	z-index: 3;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.triangle {
+	display: inline-block;
+	
+	border: 14px solid transparent; 
+	border-left: 20px solid var(--yellow);
+	margin-top: 2px;
+	margin-left: 20px;
+}
+
+.mission{
+	margin-top: 120px;
+	
+}
+
+.mission-content {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	width: 100%;
+	
+}
+.mission-foto {
+	background-image: url(../img/3img.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	width: 40%;
+	height: 490px;
+
+}
+.mission-text {
+	width: 50%;
+}
+
+.mission h3{
+	margin-top: -10px;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 55px;
+	color: #1C2323;
+	}
+
+	.mission p{
+	line-height: 45px;
+	color: #486958;
+
+	}
+
+	.Ourproject{
+		margin-top: 110px;
+		text-align: center;
+	}
+
+	.Ourproject h2{
+		margin-bottom: 0;
+	}
+
+	.Ourproject .p-text-1{
+		margin-bottom: 40px;
+	}
+
+	.Ourproject-hr{
+		width: 140px;
+		height: 5px;
+		background-color: var(--green);
+		overflow: none;
+		border: none;
+		margin: 8px auto;
+		border-radius: 3px;
+	}
+
+	.Ourproject-content{
+		display: flex;
+		margin-top: 80px;
+		justify-content: space-between;
+		text-align: left;
+	}
+
+.Ourproject-1, .Ourproject-2, .Ourproject-3{
+	width: 28%;
+}
+
+.Ourproject1-foto, .Ourproject2-foto, .Ourproject3-foto{
+	width: 100%;
+}
+
+.Ourproject1-foto, .Ourproject3-foto{
+	border-radius: 0 0 225px 225px;
+}
+
+.Ourproject2-foto{
+	border-radius: 225px ;
+}
+
+.Ourproject h3{
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 40px;
+	color: var(--green);
+	margin: 0;
+	margin-top: 15px;
+}
+
+.Ourproject p{
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 24px;
+	color: #486958;
+	margin-top: 14px;
+	margin-bottom: 26px;
+	word-break: break-all;
+}
+
+.Testimonial{
+	margin-top: 200px;
+	text-align: center;
+}
+
+.Testimonial h2{
+	margin-bottom: 10px;
+}
+
+.Testimonial-content {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-left: 160px;
+	margin-right: 160px;
+
+}
+
+.Testimonial-foto {
+	width: 18%;
+	height: 100%;
+}
+
+
+/* qqq */
+
+
+.Projectdone-content {
+	margin-top: 80px;
+}
+
+.Projectdone-foto-block {
+	position: relative;
+	width: 36%;
+	float: left;
+	background-image: url(../img/7img.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	height: 520px;
+}
+.Projectdone-text-block {
+	box-sizing: border-box;
+	width: 64%;
+	height: 520px;
+	float: right;
+	background-color: #CCF0E6;
+	padding:  40px 100px;
+	font-size: 18px;
+	color: #486958;
+	font-weight: 500;
+	line-height: 28px;
+}
+
+.info{
+	display: flex;
+	justify-content: space-between;
+}
+
+.info-block{
+	width: 26%;
+	font-weight: 500;
+font-size: 20px;
+line-height: 26 px;
+color: var(--green);
+}
+
+.info span{
+font-weight: 800;
+font-size: 60px;
+line-height: 70px;
+}
+
+.Projectdone p{
+	position: relative;
+	margin-top: 70px;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 38px;
+	color: #486958;
+	margin-bottom: 30px;
+	z-index: 999;
+}
+
+.Projectdone p::before{
+  content: '“';
+	position: absolute;
+	top: -110px;
+	left: -45px;
+	font-family: 'Port Lligat Sans', sans-serif;
+	font-size: 250px;
+	line-height: 321px;
+	color: #fff;
+	z-index: -1;
+}
+
+
+.Projectdone i{
+
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 38px;
+	color: #58A9A5;
+}
+
+.forma{
+	margin-top: 170px;
+	margin-bottom: 100px;
+}
+
+.forma-content{
+	display: flex;
+	justify-content: space-between;
+
+}
+
+.forma-text{
+	width: 30%;
+	height: auto;
+
+}
+
+.forma-form-Block{
+	box-sizing: border-box;
+	width: 66%;
+	height:auto;
+	border: #486958 solid 1px;
+	padding: 30px 44px;
+}
+
+.forma h2{
+	margin: 0;
+	margin-top: 18px;
+	line-height: 54px;
+}
+
+.forma p{
+	margin-bottom: 30px;
+}
+
+.forma .Ourproject-hr{
+	margin-left: 0;
+}
+
+.forma .btn{
+	float: right;
+	margin-top: 60px;
+}
+
+.forma input{
+	width: 100%;
+	border: none;
+	margin: 10px 0;
+	padding: 10px 0;
+	border-bottom: 1px solid #486958;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 32px;
+	outline: none;
+}
+
+.forma textarea{
+	border: none;
+	outline: none;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 32px;
+	margin: 10px 0;
+	padding: 10px 0;
+	color:  #486958;
+	resize: none;
+	height: 90px;
+	width: 70%;
+}
